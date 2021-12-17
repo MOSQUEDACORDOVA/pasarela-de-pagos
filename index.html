@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Academia Americana">
+    <meta name="keywords" content="academia">
+    <meta name="author" content="MOSQUEDA CÓRDOVA">
+    <title>Academia Americana</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/pickers/form-pickadate.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+    </script>
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-body">
+                
+                <section>
+                    <div class="row match-height flex-md-row-reverse">
+
+                        <!-- Formulario de grpos -->
+                        <div class="col-12 col-md-7">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Grupos</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="aperturas-tab" data-bs-toggle="tab" href="#aperturas" aria-controls="aperturas" role="tab" aria-selected="true">Aperturas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="desdecero-tab" data-bs-toggle="tab" href="#desdecero" aria-controls="desdecero" role="tab" aria-selected="false">Desde cero</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="intensivo-tab" data-bs-toggle="tab" href="#intensivo" aria-controls="intensivo" role="tab" aria-selected="false">Intensivos</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="aperturas" aria-labelledby="aperturas-tab" role="tabpanel">
+                                            <style>
+                                                .card-datatable td{
+                                                    padding-left: 0 !important;
+                                                }
+                                            </style>
+                                            <div class="card-datatable table-responsive pt-0">
+                                                <div class=" TipoCurso-grupos"></div>
+                                                <table class="user-list-table-Tabla-Aperturas table">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th class="d-none">Nombre</th>
+                                                            <th class="d-none">tipo-curso</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="desdecero" aria-labelledby="desdecero-tab" role="tabpanel">
+                                            <div class="card-datatable table-responsive pt-0">
+                                               <div class="row">
+                                                <div class="col-4 niveles-grupos"></div>
+                                                <div class="col-4 profesor-grupos"></div>
+                                                <div class="col-4 pagos-grupos"></div>
+                                               </div>
+                                                <table class="user-list-table-Tabla-DesdeCero table">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th class="d-none"></th>
+                                                            <th class="d-none">Nombre</th>
+                                                            <th class="d-none">Role</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="intensivo" aria-labelledby="intensivo-tab" role="tabpanel">
+                                            <div class="card-datatable table-responsive pt-0">
+                                                <div class="row">
+                                                 <div class="col-4 niveles-grupos-intensivo"></div>
+                                                 <div class="col-4 profesor-grupos-intensivo"></div>
+                                                 <div class="col-4 pagos-grupos-intensivo"></div>
+                                                </div>
+                                                 <table class="user-list-table-Tabla-Intensivo table">
+                                                     <thead class="table-light">
+                                                         <tr>
+                                                             <th class="d-none"></th>
+                                                             <th class="d-none">Nombre</th>
+                                                             <th class="d-none">Role</th>
+                                                         </tr>
+                                                     </thead>
+                                                 </table>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Formulario de grpos -->
+
+                    </div>
+
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0">
+            <span class="float-md-start d-block d-md-inline-block mt-25">
+                &copy; 2021<a class="ms-25" href="#" target="_blank">MOSQUEDA CÓRDOVA</a>
+            </span>
+        </p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/extensions/toastr.min.js"></script>
+    <script src="app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+    <script src="app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="app-assets/vendors/js/forms/cleave/cleave.min.js"></script>
+    <script src="app-assets/vendors/js/forms/cleave/addons/cleave-phone.us.js"></script>
+    <script src="app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <script src="app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+    <script src="app-assets/vendors/js/forms/cleave/cleave.min.js"></script>
+    <script src="app-assets/vendors/js/forms/cleave/addons/cleave-phone.us.js"></script>
+    <script src="app-assets/vendors/js/forms/cleave/cleave.min.js"></script>
+    <script src="app-assets/vendors/js/forms/cleave/addons/cleave-phone.us.js"></script>
+
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/components/components-navs.js"></script>
+    <script src="app-assets/js/scripts/pages/app-user-list.js"></script>
+    <script src="app-assets/js/scripts/pages/app-user-list-Tabla-Aperturas.js"></script>
+    <script src="app-assets/js/scripts/pages/app-user-list-Tabla-DesdeCero.js"></script>
+    <script src="app-assets/js/scripts/pages/app-user-list-Tabla-Intensivo.js"></script>
+    <script src="app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
+    <script src="app-assets/js/scripts/forms/form-number-input.js"></script>
+    <script src="app-assets/js/scripts/forms/form-input-mask.js"></script>
+    <script src="app-assets/js/scripts/components/components-tooltips.js"></script>
+    <script src="app-assets/js/scripts/forms/form-input-mask.js"></script>
+
+
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

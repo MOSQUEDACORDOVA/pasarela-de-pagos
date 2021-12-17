@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "tipo-curso": "Intensivo",
+      "nomenclatura": "C21101-1",
+      "profesor": "I. Mosqueda",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-04",
+      "fecha_fin": "2021-08-04"
+    },
+    {
+      "id": 2,
+      "tipo-curso": "Desde cero",
+      "nomenclatura": "C21102-2",
+      "profesor": "N. Córdova",
+      "dia_pago": "15 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-05",
+      "fecha_fin": "2021-08-05"
+    },
+    {
+      "id": 3,
+      "tipo-curso": "Desde cero",
+      "nomenclatura": "C21103-3",
+      "profesor": "A. Paredes",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-11",
+      "fecha_fin": "2021-08-11"
+    },
+    {
+      "id": 4,
+      "tipo-curso": "Intensivo",
+      "nomenclatura": "C21104-4",
+      "profesor": "J. Flores",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-01",
+      "fecha_fin": "2021-08-01"
+    },
+    {
+      "id": 5,
+      "tipo-curso": "Intensivo",
+      "nomenclatura": "C21105-1",
+      "profesor": "J. Arzolay",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-01",
+      "fecha_fin": "2021-08-01"
+    },
+    {
+      "id": 6,
+      "tipo-curso": "Intensivo",
+      "nomenclatura": "C21106-2",
+      "profesor": "J. Teran",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-01",
+      "fecha_fin": "2021-08-01"
+    },
+    {
+      "id": 7,
+      "tipo-curso": "Intensivo",
+      "nomenclatura": "C21107-3",
+      "profesor": "S. Flores",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-01",
+      "fecha_fin": "2021-08-01"
+    },
+    {
+      "id": 8,
+      "tipo-curso": "Intensivo",
+      "nomenclatura": "C21108-4",
+      "profesor": "P. Pérez",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-01",
+      "fecha_fin": "2021-08-01"
+    },
+    {
+      "id": 9,
+      "tipo-curso": "Intensivo",
+      "nomenclatura": "C21109-1",
+      "profesor": "M. Abreu",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-01",
+      "fecha_fin": "2021-08-01"
+    },
+    {
+      "id": 10,
+      "tipo-curso": "Intensivo",
+      "nomenclatura": "C21110-2",
+      "profesor": "A. Martínez",
+      "dia_pago": "01 del mes",
+      "horario": "Lunes: 6:30pm a 9pm",
+      "fecha_inicio": "2021-01-01",
+      "fecha_fin": "2021-08-01"
+    }
+  ]
+}

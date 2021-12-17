@@ -1,0 +1,209 @@
+<section>
+    <div class="row match-height flex-md-row-reverse">
+
+        <!-- Listado de grpos -->
+        <div class="col-12 col-md-7">
+            <div class="card ">
+                <div class="card-header pb-md-0">
+                     <h4 class="card-title">Crear grupo</h4>
+                     <div class="heading-elements d-md-none">
+                        <ul class="list-inline mb-0">
+                            <li>
+                                <a data-action="collapse"><i data-feather="chevron-down"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="card-header pt-1 font-small-2 d-none d-md-block">
+                    Si presionas un item a la derecha tambien puedes editarlo acá. . .
+                </p>
+
+                <div class="card-content collapse show">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row custom-options-checkable g-1 mb-1">
+                                <div class="col-md-6">
+                                    <input class="custom-option-item-check" type="radio" name="customOptionsCheckableRadios" id="customOptionsCheckableRadios1" checked />
+                                    <label class="custom-option-item p-1" for="customOptionsCheckableRadios1">
+                                        <span class="d-flex justify-content-between flex-wrap mb-50">
+                                            <span class="fw-bolder">Desde cero</span>
+                                        </span>
+                                        <small class="d-block">1 lección semanal.</small>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input class="custom-option-item-check" type="radio" name="customOptionsCheckableRadios" id="customOptionsCheckableRadios2" value="" />
+                                    <label class="custom-option-item p-1" for="customOptionsCheckableRadios2">
+                                        <span class="d-flex justify-content-between flex-wrap mb-50">
+                                            <span class="fw-bolder">Intensivo</span>
+                                        </span>
+                                        <small class="d-block">2 lecciones semanales.</small>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- button group checkbox -->
+                            <div class="row mb-1">
+                                <label class="form-label" for="first-name-column">Día</label>
+                                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                    <input type="checkbox" class="btn-check" id="btncheck2" checked autocomplete="off" />
+                                    <label class="btn btn-primary" for="btncheck2">
+                                        L<span class="d-none d-md-inline">u</span>
+                                    </label>
+
+                                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+                                    <label class="btn btn-primary" for="btncheck3">
+                                        <span class="d-none d-md-inline">M</span><span class="d-inline d-md-none">K</span><span class="d-none d-md-inline">a</span>
+                                    </label>
+
+                                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off" />
+                                    <label class="btn btn-primary" for="btncheck4">
+                                        M<span class="d-none d-md-inline">i</span>
+                                    </label>
+
+                                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off" />
+                                    <label class="btn btn-primary" for="btncheck5">
+                                        J<span class="d-none d-md-inline">u</span>
+                                    </label>
+
+                                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off" />
+                                    <label class="btn btn-primary" for="btncheck6">
+                                        V<span class="d-none d-md-inline">i</span>
+                                    </label>
+
+                                    <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off" />
+                                    <label class="btn btn-primary" for="btncheck7">
+                                        S<span class="d-none d-md-inline">a</span>
+                                    </label>
+
+                                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+                                    <label class="btn btn-primary" for="btncheck1">
+                                        D<span class="d-none d-md-inline">o</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-12 mb-1">
+                                    <label class="form-label" for="fp-default">Fecha inicio</label>
+                                    <input type="text" id="fp-default" class="form-control flatpickr-basic" placeholder="YYYY-MM-DD" />
+                                </div>
+
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-1">
+                                        <label class="form-label" for="first-name-column">Horario</label>
+                                        <select class="form-select" name="fname-column" id="basicSelect">
+                                            <option> De 8:30 am a 11:00 am</option>
+                                            <option> De 6:30 pm a 9:00 pm</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <!-- Basic -->
+                                <div class="col-md-6 mb-1">
+                                    <label class="form-label" >Profesor</label>
+                                    <select class="select2 form-select" >
+                                        <option value="OH">Pedro</option>
+                                        <option value="PA">Jose</option>
+                                        <option value="RI">Maria</option>
+                                        <option value="SC">Juana</option>
+                                        <option value="VT">Ramona</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-md-6 mb-1">
+                                    <label class="form-label" for="numeral-formatting">Capacidad</label>
+                                    <input type="text" class="form-control numeral-mask" placeholder="30" id="numeral-formatting" />
+                                </div>
+
+                            </div>  
+                            
+                            <div class="row mb-1"> 
+                                <div class="col-12">
+                                    <label class="form-label" for="numeral-formatting">Monto mensual</label>
+                                    <input type="text" class="form-control numeral-mask" placeholder="30.000" id="numeral-formatting" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <button type="reset" class="btn btn-primary me-1">Guardar</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--/ Fin Listado de grpos -->
+
+        <!-- Formulario de grpos -->
+        <div class="col-12 col-md-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Grupos</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="aperturas-tab" data-bs-toggle="tab" href="#aperturas" aria-controls="aperturas" role="tab" aria-selected="true">Aperturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="desdecero-tab" data-bs-toggle="tab" href="#desdecero" aria-controls="desdecero" role="tab" aria-selected="false">Desde cero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="intensivo-tab" data-bs-toggle="tab" href="#intensivo" aria-controls="intensivo" role="tab" aria-selected="false">Intensivos</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="aperturas" aria-labelledby="aperturas-tab" role="tabpanel">
+                            <style>
+                                #DataTables_Table_0_wrapper td{
+                                    padding-left: 0;
+                                }
+                            </style>
+                            <div class="card-datatable table-responsive pt-0">
+                                <div class=" user_role"></div>
+                                <table class="user-list-table table">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th class="d-none"></th>
+                                            <th class="d-none">Nombre</th>
+                                            <th class="d-none">Role</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="desdecero" aria-labelledby="desdecero-tab" role="tabpanel">
+                            <p>
+                                Lo estoy haciendo. . . 
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="intensivo" aria-labelledby="intensivo-tab" role="tabpanel">
+                            <p>
+                                Este tambien. . . 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Formulario de grpos -->
+
+    </div>
+
+
+</section>
