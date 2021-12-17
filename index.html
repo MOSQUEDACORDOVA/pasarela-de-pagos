@@ -87,115 +87,131 @@
 <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Content-->
-    <div class="app-content content ">
-        <div class="content-overlay"></div>
+    <div class="p-1">
         <div class="content-wrapper container-xxl p-0">
             <div class="content-body">
-                
                 <section>
                     <div class="row match-height flex-md-row-reverse">
 
                         <!-- Formulario de grpos -->
-                        <div class="col-12 col-md-7">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Grupos</h4>
-                                </div>
+                        <div class="col-12">
+                            <!-- Earnings Card -->
+                            <div class="card mb-1 ">
                                 <div class="card-body">
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="aperturas-tab" data-bs-toggle="tab" href="#aperturas" aria-controls="aperturas" role="tab" aria-selected="true">Aperturas</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="desdecero-tab" data-bs-toggle="tab" href="#desdecero" aria-controls="desdecero" role="tab" aria-selected="false">Desde cero</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="intensivo-tab" data-bs-toggle="tab" href="#intensivo" aria-controls="intensivo" role="tab" aria-selected="false">Intensivos</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div class="tab-pane active" id="aperturas" aria-labelledby="aperturas-tab" role="tabpanel">
-                                            <style>
-                                                .card-datatable td{
-                                                    padding-left: 0 !important;
-                                                }
-                                            </style>
-                                            <div class="card-datatable table-responsive pt-0">
-                                                <div class=" TipoCurso-grupos"></div>
-                                                <table class="user-list-table-Tabla-Aperturas table">
-                                                    <thead class="table-light">
-                                                        <tr>
-                                                            <th class="d-none">Nombre</th>
-                                                            <th class="d-none">tipo-curso</th>
-                                                        </tr>
-                                                    </thead>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="desdecero" aria-labelledby="desdecero-tab" role="tabpanel">
-                                            <div class="card-datatable table-responsive pt-0">
-                                               <div class="row">
-                                                <div class="col-4 niveles-grupos"></div>
-                                                <div class="col-4 profesor-grupos"></div>
-                                                <div class="col-4 pagos-grupos"></div>
-                                               </div>
-                                                <table class="user-list-table-Tabla-DesdeCero table">
-                                                    <thead class="table-light">
-                                                        <tr>
-                                                            <th class="d-none"></th>
-                                                            <th class="d-none">Nombre</th>
-                                                            <th class="d-none">Role</th>
-                                                        </tr>
-                                                    </thead>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="intensivo" aria-labelledby="intensivo-tab" role="tabpanel">
-                                            <div class="card-datatable table-responsive pt-0">
-                                                <div class="row">
-                                                 <div class="col-4 niveles-grupos-intensivo"></div>
-                                                 <div class="col-4 profesor-grupos-intensivo"></div>
-                                                 <div class="col-4 pagos-grupos-intensivo"></div>
-                                                </div>
-                                                 <table class="user-list-table-Tabla-Intensivo table">
-                                                     <thead class="table-light">
-                                                         <tr>
-                                                             <th class="d-none"></th>
-                                                             <th class="d-none">Nombre</th>
-                                                             <th class="d-none">Role</th>
-                                                         </tr>
-                                                     </thead>
-                                                 </table>
-                                             </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="font-small-2 mb-1">Número de operación</div>
+                                            <h5 >#923W2348889</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--/ Earnings Card -->
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a 
+                                            class="nav-link active" 
+                                            id="homeIcon-tab" 
+                                            data-bs-toggle="tab" 
+                                            href="#homeIcon" 
+                                            aria-controls="home" 
+                                            role="tab" 
+                                            aria-selected="true">
+                                            <span class="iconify" data-icon="cryptocurrency:btc"></span>
+                                            BTC
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a 
+                                            class="nav-link" 
+                                            id="profileIcon-tab" 
+                                            data-bs-toggle="tab" 
+                                            href="#profileIcon" 
+                                            aria-controls="profile" 
+                                            role="tab" 
+                                            aria-selected="false">
+                                            <span class="iconify" data-icon="cryptocurrency:bnb"></span>
+                                            BNB
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a 
+                                            class="nav-link" 
+                                            id="aboutIcon-tab" 
+                                            data-bs-toggle="tab" 
+                                            href="#aboutIcon" 
+                                            aria-controls="about" 
+                                            role="tab" 
+                                            aria-selected="false">
+                                            <span class="iconify" data-icon="cryptocurrency:usdt"></span>
+                                            USDT
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="homeIcon" aria-labelledby="homeIcon-tab" role="tabpanel">
+                                            <p>
+                                                Candy canes donut chupa chups candy canes lemon drops oat cake wafer. Cotton candy candy canes marzipan
+                                                carrot cake. Sesame snaps lemon drops candy marzipan donut brownie tootsie roll. Icing croissant bonbon
+                                                biscuit gummi bears. Pudding candy canes sugar plum cookie chocolate cake powder croissant.
+                                            </p>
+                                            <p>
+                                                Carrot cake tiramisu danish candy cake muffin croissant tart dessert. Tiramisu caramels candy canes
+                                                chocolate cake sweet roll liquorice icing cupcake. Candy cookie sweet roll bear claw sweet roll.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane" id="profileIcon" aria-labelledby="profileIcon-tab" role="tabpanel">
+                                            <p>
+                                                Dragée jujubes caramels tootsie roll gummies gummies icing bonbon. Candy jujubes cake cotton candy.
+                                                Jelly-o lollipop oat cake marshmallow fruitcake candy canes toffee. Jelly oat cake pudding jelly beans
+                                                brownie lemon drops ice cream halvah muffin. Brownie candy tiramisu macaroon tootsie roll danish.
+                                            </p>
+                                            <p>
+                                                Croissant pie cheesecake sweet roll. Gummi bears cotton candy tart jelly-o caramels apple pie jelly
+                                                danish marshmallow. Icing caramels lollipop topping. Bear claw powder sesame snaps.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane" id="disabledIcon" aria-labelledby="disabledIcon-tab" role="tabpanel">
+                                            <p>
+                                                Chocolate croissant cupcake croissant jelly donut. Cheesecake toffee apple pie chocolate bar biscuit
+                                                tart croissant. Lemon drops danish cookie. Oat cake macaroon icing tart lollipop cookie sweet bear claw.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane" id="aboutIcon" aria-labelledby="aboutIcon-tab" role="tabpanel">
+                                            <p>
+                                                Gingerbread cake cheesecake lollipop topping bonbon chocolate sesame snaps. Dessert macaroon bonbon
+                                                carrot cake biscuit. Lollipop lemon drops cake gingerbread liquorice. Sweet gummies dragée. Donut bear
+                                                claw pie halvah oat cake cotton candy sweet roll. Cotton candy sweet roll donut ice cream.
+                                            </p>
+                                            <p>
+                                                Halvah bonbon topping halvah ice cream cake candy. Wafer gummi bears chocolate cake topping powder.
+                                                Sweet marzipan cheesecake jelly-o powder wafer lemon drops lollipop cotton candy.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- Fin Formulario de grpos -->
-
                     </div>
-
-
                 </section>
-
             </div>
         </div>
     </div>
     <!-- END: Content-->
 
-    <div class="sidenav-overlay"></div>
-    <div class="drag-target"></div>
-
     <!-- BEGIN: Footer-->
     <footer class="footer footer-static footer-light">
         <p class="clearfix mb-0">
-            <span class="float-md-start d-block d-md-inline-block mt-25">
+            <span class="float-md-start d-block d-md-inline-block">
                 &copy; 2021<a class="ms-25" href="#" target="_blank">MOSQUEDA CÓRDOVA</a>
             </span>
         </p>
     </footer>
-    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
 
 
@@ -249,7 +265,7 @@
     <script src="app-assets/js/scripts/forms/form-input-mask.js"></script>
     <script src="app-assets/js/scripts/components/components-tooltips.js"></script>
     <script src="app-assets/js/scripts/forms/form-input-mask.js"></script>
-
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
     <!-- END: Page JS-->
 
