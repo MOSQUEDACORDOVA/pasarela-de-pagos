@@ -17,13 +17,11 @@
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/select/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/pickadate/pickadate.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/file-uploaders/dropzone.min.css">
+
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -36,13 +34,11 @@
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
 
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-ecommerce.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-validation.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/pickers/form-pickadate.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-file-uploader.css">
+
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -157,15 +153,15 @@
                                                             <small>Al cambio: $300</small>
                                                         </div>
                                                     </div>
-                                                    <div class="mt-1">
+                                                    <div class="mt-1 waves-effect w-100 rounded">
                                                         <div class="avatar float-start bg-light-primary rounded me-1">
                                                             <div class="avatar-content">
                                                                 <span class="iconify font-medium-3" data-icon="ion:wallet-outline"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="more-info">
+                                                        <div class="more-info" role="button" onclick="copiarWallet('walletBtc')">
                                                             <small>Bitcoin</small>
-                                                            <h5 class="mb-0">1JFcZZuk7QnHQjeYDVSYXZtuun2PXoqYSR</h5>
+                                                            <h5 class="mb-0" id="walletBtc">1JFcZZuk7QnHQjeYDVSYXZtuun2PXoqYSR</h5>
                                                         </div>
                                                     </div>
                                                    
@@ -187,15 +183,15 @@
                                                         <h5 class="mb-0">Total: 0.02000BTC</h5>
                                                         <small>Al cambio: $300</small>
                                                     </div>
-                                                    <div class="mt-1">
+                                                    <div class="mt-1 waves-effect w-100 rounded">
                                                         <div class="avatar float-start bg-light-primary rounded me-1">
                                                             <div class="avatar-content">
                                                                 <span class="iconify font-medium-3" data-icon="ion:wallet-outline"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="more-info">
+                                                        <div class="more-info" role="button" onclick="copiarWallet('walletBnb')">
                                                             <small>BSC Binance Smart Chain (BEP20)</small>
-                                                            <h5 class="mb-0">0xadc196554e7a44ac8ab9e59dee2af6d4856a990e</h5>
+                                                            <h5 class="mb-0" id="walletBnb">0xadc196554e7a44ac8ab9e59dee2af6d4856a990e</h5>
                                                         </div>
                                                     </div>
                                                     
@@ -217,15 +213,15 @@
                                                         <h5 class="mb-0">Total: 300USDT</h5>
                                                         <small>Al cambio: $300</small>
                                                     </div>
-                                                    <div class="mt-1">
+                                                    <div class="mt-1 waves-effect rounded w-100">
                                                         <div class="avatar float-start bg-light-primary rounded me-1">
                                                             <div class="avatar-content">
                                                                 <span class="iconify font-medium-3" data-icon="ion:wallet-outline"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="more-info">
+                                                        <div class="more-info" role="button" onclick="copiarWallet('walletUsdt')">
                                                             <small>TRX Tron (TRC20)</small>
-                                                            <h5 class="mb-0">TLFPrqqYGwFJBodS59rdbMsLJ68poUAVfF</h5>
+                                                            <h5 class="mb-0" id="walletUsdt">TLFPrqqYGwFJBodS59rdbMsLJ68poUAVfF</h5>
                                                         </div>
                                                     </div>
                                                    
@@ -322,7 +318,6 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script src="app-assets/js/scripts/forms/form-file-uploader.js"></script>
 
-
     <!-- END: Page JS-->
 
     <script>
@@ -333,7 +328,17 @@
                     height: 14
                 });
             }
-        })
+        });
+
+        function copiarWallet(_wallet) {
+
+        /* Select the text field */
+        var wallet=document.getElementById(_wallet).innerHTML;
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(wallet);
+        
+        }
     </script>
     <script>
         includeHTML();
