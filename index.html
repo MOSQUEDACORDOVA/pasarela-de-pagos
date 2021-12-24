@@ -155,7 +155,7 @@
                                         <div class="tab-pane active" id="homeIcon" aria-labelledby="homeIcon-tab" role="tabpanel">
                                             <div class="row">
                                                 <div class="col-xl-1 col-lg-1 col-md-12 text-center">
-                                                    <img class="img-fluid rounded " src="app-assets/images/elements/qr.png" alt="">
+                                                    <img class="img-fluid rounded" src="app-assets/images/elements/qr.png" alt="">
                                                 </div>
                                                 <div class="col-10">
                                                     <div class="mt-2">
@@ -188,7 +188,9 @@
                                         <div class="tab-pane" id="profileIcon" aria-labelledby="profileIcon-tab" role="tabpanel">
                                             <div class="row">
                                                 <div class="ccol-xl-1 col-lg-1 col-md-12">
-                                                    <img class="img-fluid rounded " src="app-assets/images/elements/qr.png" alt="">
+                                                    <div class="d-flex align-items-center flex-column">
+                                                        <img class="img-fluid rounded " src="app-assets/images/elements/qr.png" alt="">
+                                                    </div>
                                                 </div>
                                                 <div class="col-10">
                                                     <div class="mt-2">
@@ -220,7 +222,10 @@
                                         <div class="tab-pane" id="aboutIcon" aria-labelledby="aboutIcon-tab" role="tabpanel">
                                             <div class="row">
                                                 <div class="col-xl-1 col-lg-1 col-md-12">
-                                                    <img class="img-fluid rounded " src="app-assets/images/elements/qr.png" alt="">
+                                                    <div class="d-flex align-items-center flex-column">
+                                                        <img class="img-fluid rounded " src="app-assets/images/elements/qr.png" alt="">
+                                                    </div>
+                                                   
                                                 </div>
                                                 <div class="col-10">
                                                     <div class="mt-2">
@@ -250,11 +255,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <label class="form-label mt-2" for="basic-default-password">Ingresa el hash</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text" id="basic-addon-search1"><i data-feather="hash"></i></span>
-                                        <input type="text" class="form-control" placeholder="Hash..." aria-label="Search..." aria-describedby="basic-addon-search1" />
-                                    </div>
+                                   
                                     <label class="form-label mt-2" for="basic-default-password">Correo (opcional)</label>
                                     <div class="input-group">
                                         <span class="input-group-text" id="basic-addon-search1"><i data-feather='at-sign'></i></span>
@@ -262,6 +263,11 @@
                                     </div>
                                     <div class="alert alert-primary mt-1" role="alert">
                                         <div class="alert-body"><strong>Hola 👋🏻</strong> Esta operación puede demorar unos minutos, pero si nos dejas un correo te mantendremos al tanto de su progreso 😃</div>
+                                    </div>
+                                    <label class="form-label mt-2" for="basic-default-password">Ingresa el hash</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon-search1"><i data-feather="hash"></i></span>
+                                        <input type="text" class="form-control" placeholder="Hash..." aria-label="Search..." aria-describedby="basic-addon-search1" />
                                     </div>
                                     <button type="button" class="btn btn-primary mt-2 col-12">Enviar</button>
                                     <div class="progress-wrapper mt-2">
