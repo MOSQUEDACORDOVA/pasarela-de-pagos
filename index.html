@@ -149,7 +149,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="more-info">
-                                                            <h5 class="mb-0">Total: 400BTC</h5>
+                                                            <h5 class="mb-0">Total: 0.400BTC</h5>
                                                             <small>Al cambio: $300</small>
                                                         </div>
                                                     </div>
@@ -159,7 +159,7 @@
                                                                 <span class="iconify font-medium-3" data-icon="ion:wallet-outline"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="more-info" role="button" onclick="copiarWallet('walletBtc')">
+                                                        <div class="more-info" role="button" onclick="copiarHtml('walletBtc')">
                                                             <small>Bitcoin</small>
                                                             <h5 class="mb-0" id="walletBtc">1JFcZZuk7QnHQjeYDVSYXZtuun2PXoqYSR</h5>
                                                         </div>
@@ -180,7 +180,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="more-info">
-                                                        <h5 class="mb-0">Total: 0.02000BTC</h5>
+                                                        <h5 class="mb-0">Total: 0.02000BNB</h5>
                                                         <small>Al cambio: $300</small>
                                                     </div>
                                                     <div class="mt-1 waves-effect w-100 rounded">
@@ -189,7 +189,7 @@
                                                                 <span class="iconify font-medium-3" data-icon="ion:wallet-outline"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="more-info" role="button" onclick="copiarWallet('walletBnb')">
+                                                        <div class="more-info" role="button" onclick="copiarHtml('walletBnb')">
                                                             <small>BSC Binance Smart Chain (BEP20)</small>
                                                             <h5 class="mb-0" id="walletBnb">0xadc196554e7a44ac8ab9e59dee2af6d4856a990e</h5>
                                                         </div>
@@ -219,7 +219,7 @@
                                                                 <span class="iconify font-medium-3" data-icon="ion:wallet-outline"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="more-info" role="button" onclick="copiarWallet('walletUsdt')">
+                                                        <div class="more-info" role="button" onclick="copiarHtml('walletUsdt')">
                                                             <small>TRX Tron (TRC20)</small>
                                                             <h5 class="mb-0" id="walletUsdt">TLFPrqqYGwFJBodS59rdbMsLJ68poUAVfF</h5>
                                                         </div>
@@ -330,14 +330,12 @@
             }
         });
 
-        function copiarWallet(_wallet) {
+        function copiarHtml(_html) {
+            /* Select the text field */
+            var hrml=document.getElementById(_html).innerHTML;
 
-        /* Select the text field */
-        var wallet=document.getElementById(_wallet).innerHTML;
-
-        /* Copy the text inside the text field */
-        navigator.clipboard.writeText(wallet);
-        
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(hrml);
         }
     </script>
     <script>
