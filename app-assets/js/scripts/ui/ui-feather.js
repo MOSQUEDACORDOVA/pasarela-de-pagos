@@ -57,7 +57,7 @@ $(function () {
     tempInput.value = value;
     document.body.appendChild(tempInput);
     tempInput.select();
-    toastr['success'](tempInput.value.split("'")[1], 'Icon Name Copied! 📋', {
+    toastr['success'](tempInput.value.split("'")[1], 'Item Copiado ! 📋', {
       closeButton: true,
       tapToDismiss: false,
       rtl: isRtl
